@@ -11,7 +11,10 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html",
+    }),
   ],
   module: {
     rules: [
@@ -19,6 +22,17 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         exclude: /node_modules/,
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "/assets/[name].[ext]",
+            },
+          },
+        ],
       },
     ],
   },
