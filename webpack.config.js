@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
   },
+  mode: "development",
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
@@ -16,6 +17,12 @@ module.exports = {
       filename: "./index.html",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    port: 9000,
+  },
   module: {
     rules: [
       {
@@ -24,15 +31,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.png$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "/assets/[name].[ext]",
-            },
-          },
-        ],
+        test: /\.(png|jpg|gif)/,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]",
+        },
+      },
+      {
+        test: /\.svg/,
+        type: "asset/inline",
       },
     ],
   },

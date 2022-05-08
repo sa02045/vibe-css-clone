@@ -1,0 +1,63 @@
+.playbar {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(space-between);
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $color-bg-playbar;
+
+  &__control {
+    width: 300px;
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    &--prev {
+      background: url("../assets/2_sprite.svg") no-repeat -668px -671px;
+      width: 16px;
+      height: 18px;
+    }
+
+    &--play {
+      background: url("../assets/2_sprite.svg") no-repeat -669px -208px;
+      width: 22px;
+      height: 26px;
+    }
+
+    &--next {
+      background: url("../assets/2_sprite.svg") no-repeat -668px -671px;
+      width: 16px;
+      height: 18px;
+      transform: rotate(180deg);
+    }
+
+    &--repeat {
+      background: url("../assets/2_sprite.svg") no-repeat -705px -483px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--play-change {
+      background: url("../assets/2_sprite.svg") no-repeat -705px -483px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__volumn {
+    background: url("../assets/2_sprite.svg") no-repeat -731px -655px;
+    width: 17px;
+    height: 13px;
+  }
+
+  &__playlist {
+    background: url("../assets/2_sprite.svg") no-repeat -670px -473px;
+    width: 22px;
+    height: 20px;
+  }
+}

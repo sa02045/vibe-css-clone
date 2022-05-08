@@ -1,0 +1,20 @@
+.search {
+  width: 100%;
+  background-color: $color-bg-searchbar;
+  outline: none;
+  border: none;
+  padding: 15px 30px;
+
+  border-radius: 6px;
+  caret-color: $color-search-caret;
+  color: inherit;
+
+  &:focus {
+    border: 1px solid #0c96ff;
+  }
+
+  &::placeholder {
+    color: $color-placeholder;
+    font-size: $placeholder;
+  }
+}

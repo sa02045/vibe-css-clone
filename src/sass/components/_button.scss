@@ -1,0 +1,13 @@
+.subsribe-btn {
+  @include sprite;
+  background: url("../assets/1_sprite.svg") no-repeat -209px -108px;
+  width: 177px;
+  height: 44px;
+}
+
+.download-btn {
+  @include sprite;
+  background: url("../assets/1_sprite.svg") no-repeat -209px -4px;
+  width: 177px;
+  height: 44px;
+}

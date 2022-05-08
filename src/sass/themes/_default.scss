@@ -1,0 +1,17 @@
+body {
+  background-color: $color-bg;
+  color: $color-font;
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+.placeholder {
+  @include placeholder;
+}

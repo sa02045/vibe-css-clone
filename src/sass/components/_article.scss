@@ -1,0 +1,22 @@
+article {
+  width: 90%;
+
+  ul {
+    @include flexbox;
+    li + li {
+      margin-left: 15px;
+    }
+  }
+
+  & + & {
+    margin-top: 40px;
+  }
+}
+
+.thumbnail {
+  width: 310px;
+  height: 310px;
+  img {
+    width: 100%;
+  }
+}

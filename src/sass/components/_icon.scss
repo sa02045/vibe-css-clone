@@ -1,0 +1,88 @@
+.search-icon {
+  @include sprite;
+  background: url("../assets/1_sprite.svg") no-repeat -480px -512px;
+  position: absolute;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.today {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -596px -244px;
+    width: 21px;
+    height: 22px;
+  }
+}
+
+.chart {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -595px -406px;
+    width: 22px;
+    height: 20px;
+  }
+}
+
+.new-album {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -596px -533px;
+    width: 20px;
+    height: 22px;
+  }
+}
+
+.dj-station {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -69px -570px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.vibe-mag {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -596px -278px;
+    width: 20px;
+    height: 20px;
+  }
+}
+.month-song {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -596px -437px;
+    width: 20px;
+    height: 21px;
+  }
+}
+
+.likes {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -38px -572px;
+    width: 20px;
+    height: 18px;
+  }
+}
+
+.extra {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -395px -126px;
+    width: 100px;
+    height: 18px;
+  }
+}
+
+.on-stage {
+  span {
+    @include sprite;
+    background: url("../assets/1_sprite.svg") no-repeat -395px -126px;
+    width: 100px;
+    height: 18px;
+  }
+}

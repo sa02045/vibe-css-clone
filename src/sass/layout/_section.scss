@@ -1,0 +1,7 @@
+.section {
+  @include flexbox;
+  @include flex-direction(column);
+  padding: 20px 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
